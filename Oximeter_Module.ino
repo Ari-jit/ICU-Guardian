@@ -1,13 +1,13 @@
-#include <Wire.h>              // For I2C SLAVE (main communication)
+#include <Wire.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
 #include "MAX30105.h"
 
-// I2C Address for this module (SLAVE)
+// I2C Address for Oximeter module
 #define MODULE_ADDRESS 0x42
 
 // Sensor Pin Definitions
-#define DS18B20_PIN 4         // OneWire data pin for DS18B20
+#define DS18B20_PIN 4         // Data pin for DS18B20
 #define OXYGEN_VALVE_PIN 5    // Oxygen valve control
 
 // Define second I2C bus for sensors (Wire1)
