@@ -1,13 +1,13 @@
-#include <Wire.h>              // For I2C SLAVE (main communication)
-#include <YFS201.h>            // Flow sensor library (install via Library Manager)
+#include <Wire.h>              
+#include <YFS201.h>            // Flow sensor library
 
-// I2C Address for this module (SLAVE)
+// I2C Address for Fluid module
 #define MODULE_ADDRESS 0x40
 
 // Sensor Pin Definitions
-#define FLOW_INLET_PIN  4      // YF-S201 flow sensor inlet
-#define FLOW_OUTLET_PIN 5      // YF-S201 flow sensor outlet
-#define PUMP_RELAY_PIN  16     // Fluid pump relay control
+#define FLOW_INLET_PIN  4      // Flow sensor inlet
+#define FLOW_OUTLET_PIN 5      // Flow sensor outlet
+#define PUMP_RELAY_PIN  16     // Pump control
 
 // Flow sensor objects
 YFS201 flowInlet;

@@ -10,7 +10,7 @@
 #include <tensorflow/lite/micro/micro_interpreter.h>
 #include <tensorflow/lite/schema/schema_generated.h>
 
-// WiFi Credentials - UPDATE WITH YOUR DETAILS
+// WiFi Credentials
 const char* ssid = "Arijit's S23";
 const char* password = "Acg272006";
 
@@ -588,7 +588,7 @@ void setup_webserver() {
     sensors["SpO2"] = current_sensor_data[7];
     sensors["Temperature"] = current_sensor_data[9];
     
-    // Add ML confidence if available
+
     if (output != nullptr) {
       float max_prob = 0;
       for (int i = 0; i < 3; i++) {

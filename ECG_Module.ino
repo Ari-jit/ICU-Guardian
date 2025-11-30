@@ -60,10 +60,6 @@ void pinSetup() {
   pinMode(ECG_OUTPUT_PIN, INPUT);
   pinMode(LO_PLUS_PIN, INPUT);
   pinMode(LO_MINUS_PIN, INPUT);
-  
-  // Enable pull-down resistors for lead-off detection
-  // Note: ESP32 doesn't have analog pull-down, so we use digital
-  // For lead-off detection, we'll use digitalRead
 }
 
 void loop() {
